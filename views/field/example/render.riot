@@ -1,0 +1,19 @@
+<field-example-render>
+  <div>
+    { value }
+  </div>
+  
+  <script>
+    // export default
+    export default class FieldExampleRender {
+      /**
+       * on before mount
+       */
+      onBeforeMount() {
+        // set initial value
+        this.value = this.props.value;
+      }
+    }
+    
+  </script>
+</field-example-render>

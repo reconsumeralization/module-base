@@ -1,0 +1,48 @@
+<field-example-input>
+  <div class={ props.field.group || 'mb-3' }>
+    <label class="form-label" for={ props.getId(props.field.uuid) }>
+      { props.field.label }
+      <a href="#!" if={ !props.field.label } onclick={ (e) => props.updateAction(e, props.field) }>
+        <i>Set Label</i>
+      </a>
+    </label>
+    <input class="form-control" name={ props.getName(props.field.uuid) } value={ value } />
+  </div>
+  
+  <script>
+    // export default
+    export default class FieldExampleInput {
+      /**
+       * on before mount
+       */
+      onBeforeMount() {
+        // on change
+        this.onChange = this.onChange.bind(this);
+    
+        // set initial value
+        this.value = this.props.value;
+      }
+
+      /**
+      * on change
+      *
+      * @param {Event} e
+      */
+      onChange(e) {
+        // set value
+        this.value = this.val();
+      }
+    
+      /**
+      * return value
+      *
+      * @return {*}
+      */
+      val() {
+        // return non accumulated value
+        return this.$('input').value;
+      }
+    }
+    
+  </script>
+</field-example-input>
