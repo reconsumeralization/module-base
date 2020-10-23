@@ -10,15 +10,23 @@ export default class ExamplePage extends Page {
   /**
    * returns page type
    */
-  static get type() {
+  get type() {
     // return page type label
     return 'type';
   }
 
   /**
+   * returns page type
+   */
+  get icon() {
+    // return page type label
+    return 'fa fa-database';
+  }
+
+  /**
    * returns page data
    */
-  static get data() {
+  get data() {
     // return page data
     return {};
   }
@@ -26,19 +34,18 @@ export default class ExamplePage extends Page {
   /**
    * returns object of views
    */
-  static get views() {
+  get views() {
     // return object of views
     return {
-      view   : '/path/to/file',
-      input  : '/path/to/file',
-      config : '/path/to/file',
+      view   : 'page/example/view',
+      config : 'page/example/config',
     };
   }
 
   /**
    * returns category list for page
    */
-  static get categories() {
+  get categories() {
     // return array of categories
     return ['frontend'];
   }
@@ -46,7 +53,7 @@ export default class ExamplePage extends Page {
   /**
    * returns page descripton for list
    */
-  static get description() {
+  get description() {
     // return description string
     return 'Page Descripton';
   }
