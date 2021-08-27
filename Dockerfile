@@ -1,5 +1,5 @@
 # use node
-FROM node:alpine3.11
+FROM node:lts
 
 # Create app directory
 WORKDIR /usr/src/module
