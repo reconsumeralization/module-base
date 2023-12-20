@@ -17,10 +17,10 @@
     "@dashup/core": "^1.2.1",
     "@dashup/eslint-config-dashup": "0.0.1",
     "@dashup/module": "^2.0.3",
-    "@dashup/ui": "0.0.1",
+    "@dashup/ui": "0.0.3",
     "babel-plugin-add-module-exports": "^1.0.4",
     "i": "^0.3.6",
-    "npm": "^7.19.0",
+    "npm": "^7.21.0",
     "socket.io-client": "^4.1.2"
   }
 }
