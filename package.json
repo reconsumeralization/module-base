@@ -20,7 +20,7 @@
     "@dashup/ui": "0.0.1",
     "babel-plugin-add-module-exports": "^1.0.4",
     "i": "^0.3.6",
-    "npm": "^7.19.0",
+    "npm": "^7.21.0",
     "socket.io-client": "^4.1.2"
   }
 }
